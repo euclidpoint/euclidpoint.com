@@ -1,0 +1,179 @@
+/* General */
+body {
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+  font-family: helvetica, arial, sans-serif;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: 0.5em;
+}
+
+h1 a:link, h1 a:visited,
+h2 a:link, h2 a:visited,
+h3 a:link, h3 a:visited,
+h4 a:link, h4 a:visited,
+h5 a:link, h5 a:visited,
+h6 a:link, h6 a:visited,
+.links a:link, .links a:visited {
+  color: #333;
+}
+
+h1 a:hover, h1 a:active,
+h2 a:hover, h2 a:active,
+h3 a:hover, h3 a:active,
+h4 a:hover, h4 a:active,
+h5 a:hover, h5 a:active,
+h6 a:hover, h6 a:active,
+.links a:hover, .links a:active {
+  color: #555;
+}
+
+
+a:link, a:visited {
+  color: #03c;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #03f;
+  text-decoration: underline;
+}
+
+.links a {
+  font-size: small;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.links a:last-child {
+  margin-right: 0;
+}
+
+.footerlinks a {
+  margin-right: 1em;
+}
+
+.footerlinks a:last-child {
+  margin-right: 0;
+}
+
+pre, code, samp, kbd {
+  font-family: monospace,monospace;
+  color: #006;
+}
+
+pre {
+  background: #eee;
+  padding: 0.5em;
+  overflow: auto;
+}
+
+blockquote {
+  border-left: medium solid #ccc;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0.5em;
+  background: #eee;
+}
+
+blockquote *:first-child {
+  margin-top: 0;
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+/* Single column layout */
+nav div, main, footer > div {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+}
+
+/* Top navigation panel */
+nav {
+    background: #333;
+    border-bottom: thin solid #111;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 1em;
+    /* Prevent anchor height from being larger than image height.
+       Otherwise, the entire anchor would be center-aligned which would
+       cause the logo to shift towards the top. */
+    line-height: 0;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a:link, nav a:visited {
+    color: #ccc;
+}
+
+nav a:hover, nav a:active {
+    color: #fff;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    height: 4em;
+}
+
+nav img {
+    height: 3.2em;
+}
+
+nav img:hover {
+    filter: brightness(120%);
+}
+
+/* Footer */
+footer {
+    background: #eee;
+    border-top: thin solid #ccc;
+    margin-top: 1em;
+    padding-top: 1.25em;
+    padding-bottom: 1em;
+    box-shadow: 0 100vh 0 100vh #eee;
+}
+
+footer div div {
+    font-size: small;
+}
+
+/* Add some vertical space between Facebook and Twitter plugins,
+ * otherwise they stick next to each other. */
+.fb-page {
+    margin-bottom: 0.5em;
+}
+
+
+/* Posts */
+.meta {
+    font-size: small;
+    font-style: italic;
+    color: #555;
+}
+
+.summary {
+    margin-bottom: 0.25em;
+}
+
+div .more {
+    margin-top: 0;
+    font-weight: bold;
+}

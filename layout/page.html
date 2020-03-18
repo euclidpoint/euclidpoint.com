@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ title }} - {{ subtitle }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="{{ root }}css/main.css">
+  <link rel="icon" type="image/png" href="{{ root }}favicon.png">
+  <script src="{{ root }}js/tex.js"></script>
+</head>
+
+<body>
+
+<nav>
+  <div>
+    <a href="{{ root }}">Home</a>
+    <a href="{{ root }}join/">Join</a>
+    <a href="{{ root }}blog/">Blog</a>
+  </div>
+</nav>
+
+<main>
+{{ content }}
+</main>
+
+<footer>
+  <div>
+    <div>
+      <a href="https://twitter.com/euclidpoint"
+         class="twitter-follow-button"
+         data-show-count="true">Follow @euclidpoint</a>
+      <script async src="https://platform.twitter.com/widgets.js"></script>
+    </div>
+    <div>
+    <p>
+      &copy; 2020 Euclid Point
+    </p>
+    <p>
+      This is free and open source website.
+      The source code of this website is available on
+      <a href="https://github.com/euclidpoint/euclidpoint.com">GitHub</a>.
+      You are welcome to modify and improve this website under the terms
+      of the <a href="{{ root }}/license/">MIT License</a>.
+    </p>
+    <p>
+      To report bugs, suggest improvements, or ask questions,
+      <a href="https://github.com/euclidpoint/euclidpoint.com/issues">create issues</a>.
+    </p>
+    </div>
+    <div class="footerlinks">
+      <a href="{{ root }}blog/rss.xml">Feed</a>
+      <a href="https://github.com/euclidpoint/euclidpoint.com">Source</a>
+      <a href="https://github.com/euclidpoint/euclidpoint.com/issues">Issues</a>
+      <a href="https://twitter.com/euclidpoint">Twitter</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
